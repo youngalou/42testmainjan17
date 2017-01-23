@@ -6,9 +6,11 @@
 /*   By: jkalia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 14:29:51 by jkalia            #+#    #+#             */
+/*   Updated: 2017/01/22 16:50:13 by imelvill         ###   ########.fr       */
 /*   Updated: 2017/01/22 16:26:01 by jkalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h> 
 int		match(char *s1, char *s2);
 
@@ -44,7 +46,8 @@ int		main(void)
 	printf("S1 = 'abc'     S2 = 'A**'     Expected = 0 Answer = %i\n", match("abc", "A**"));
 	printf("S1 = 'abc'     S2 = 'a*t*bc'  Expected = 0 Answer = %i\n", match("abc", "a*t*bc"));
 	printf("S1 = ''        S2 = '*a'      Expected = 0 Answer = %i\n", match("", "*a"));
-	printf("S1 = '*bc'     S2 = '*a'      Expected = 0 Answer = %i\n", match("*bc", "*a"));
-	
+  //	printf("S1 = '*'        S2 = '*'      Expected = 1 Answer = %i\n", match("", "*a")); git test - ian
+  printf("S1 = '*bc'     S2 = '*a'      Expected = 0 Answer = %i\n", match("*bc", "*a"));
+
 	return (0);
 }
