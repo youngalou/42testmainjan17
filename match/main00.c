@@ -6,7 +6,7 @@
 /*   By: jkalia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 14:29:51 by jkalia            #+#    #+#             */
-/*   Updated: 2017/01/22 16:08:35 by lyoung           ###   ########.fr       */
+/*   Updated: 2017/01/22 16:26:01 by jkalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h> 
@@ -21,6 +21,7 @@ int		main(void)
 	printf("S1 = 'abc'     S2 = '**'      Expected = 1 Answer = %i\n", match("abc", "**"));
 	printf("S1 = 'abc'     S2 = '*****'   Expected = 1 Answer = %i\n", match("abc", "*****"));
 	printf("S1 = 'abc'     S2 = 'a***'    Expected = 1 Answer = %i\n", match("abc", "a***"));
+	printf("S1 = 'abc'     S2 = 'a*'      Expected = 1 Answer = %i\n", match("abc", "a*"));
 	printf("S1 = 'main.c'  S2 = '*.c'     Expected = 1 Answer = %i\n", match("main.c", "*.c"));
 	printf("S1 = 'main.c'  S2 = '*.c*'    Expected = 1 Answer = %i\n", match("main.c", "*.c*"));
 	printf("S1 = 'main.c'  S2 = '***.c*'  Expected = 1 Answer = %i\n", match("main.c", "***.c*"));
