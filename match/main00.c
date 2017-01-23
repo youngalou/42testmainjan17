@@ -6,7 +6,7 @@
 /*   By: jkalia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 14:29:51 by jkalia            #+#    #+#             */
-/*   Updated: 2017/01/22 20:31:24 by bmontoya         ###   ########.fr       */
+/*   Updated: 2017/01/22 20:44:37 by bmontoya         ###   ########.fr       */
 /*   Updated: 2017/01/22 16:26:01 by jkalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -57,6 +57,8 @@ int		main(void)
 		   	match("*****", "**"));
     printf("S1 = '**'      S2 = '****'    Expected = 1 Answer = %i\n",
 		   	match("**", "****"));
+    printf("S1 = '*'       S2 = '*'       Expected = 1 Answer = %i\n",
+		   match("*", "*"));
 	printf("S1 = 'abc'     S2 = '***sdf*' Expected = 0 Answer = %i\n",
 		   	match("abc", "***sdf*"));
 	printf("S1 = 'main.c'  S2 = '.c*'     Expected = 0 Answer = %i\n",
@@ -75,8 +77,6 @@ int		main(void)
 		   	match("abc", "a*t*bc"));
 	printf("S1 = ''        S2 = '*a'      Expected = 0 Answer = %i\n",
 		   	match("", "*a"));
-    printf("S1 = '*'       S2 = '*'       Expected = 1 Answer = %i\n",
-		   match("", "*a"));
     printf("S1 = '*bc'     S2 = '*a'      Expected = 0 Answer = %i\n",
 		   	match("*bc", "*a"));
     printf("S1 = 0     S2 = 0             Expected = 0 Answer = %i\n",
