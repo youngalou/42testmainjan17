@@ -6,14 +6,24 @@
 /*   By: lyoung <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/23 16:14:04 by lyoung            #+#    #+#             */
-/*   Updated: 2017/01/23 16:37:51 by lyoung           ###   ########.fr       */
+/*   Updated: 2017/01/23 17:48:08 by lyoung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int		check_sort(int a, int b);
 int		ft_is_sort(int *tab, int length, int (*f)(int, int));
+
+int		check_sort(int a, int b)
+{
+	if (a == b)
+		return (0);
+	else if (a > b)
+		return (1);
+	else if (a < b)
+		return (-1);
+	return (0);
+}
 
 int		main(void)
 {
